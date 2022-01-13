@@ -1,10 +1,16 @@
 package com.logging;
 
+import ch.qos.logback.classic.LoggerContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
+/**
+ * slf4j это фасад, который внутри себя вызывает методы библиотек ch.qos.logback
+ * @see LoggerContext#getLogger(java.lang.String)
+ */
 
 public class DateTimeProvider {
 
